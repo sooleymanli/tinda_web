@@ -1,0 +1,1 @@
+const toastBottomRight = useRef(null);

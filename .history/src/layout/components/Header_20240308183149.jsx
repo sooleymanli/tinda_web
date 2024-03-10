@@ -1,0 +1,31 @@
+import { Avatar } from 'primereact/avatar'
+import React from 'react'
+import styled from 'styled-components'
+
+export default function Header() {
+  return (
+    <HeaderWrapper>
+<UserName>Fuad Suleymanli</UserName>
+<Avatar image="https://www.gravatar.com/avatar/05dfd4b41340d09cae045235eb0893c3?d=mp" size="normal" shape="circle" style={{border:"1px solid" }} />
+
+
+    </HeaderWrapper>
+  )
+}
+
+const HeaderWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 16px;
+  gap: 16px;
+  border-bottom: 1px solid #ededed;
+`
+
+const UserName = styled.span`
+font-size: 16px;
+color: #000;
+font-weight: 500;
+  
+`
