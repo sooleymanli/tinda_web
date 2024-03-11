@@ -16,7 +16,7 @@ import { BrowserRouter } from 'react-router-dom';
 ReactDOM.createRoot(document.getElementById('root')).render(
 
 
-  <BrowserRouter basename='/tinda_web'>
+  <BrowserRoute r>
   <React.StrictMode>
     <PrimeReactProvider>
       <Provider store={store}>
@@ -24,5 +24,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </Provider>
     </PrimeReactProvider>
   </React.StrictMode>
-  </BrowserRouter>,
+  </BrowserRoute>,
 )
