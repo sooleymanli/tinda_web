@@ -1,10 +1,11 @@
 {
-  "homepage": ".",
+  "homepage": "https://sooleymanli.github.io/tinda_web",
   "name": "tinda_app",
   "private": true,
   "version": "0.0.3",
   "type": "module",
   "scripts": {
+   
     "start": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
