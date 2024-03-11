@@ -7,7 +7,7 @@ import 'primeicons/primeicons.css';
 import { PrimeReactProvider } from 'primereact/api';
 import { Provider } from 'react-redux'
 import store from './app/store.js'
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 
 
 
@@ -16,7 +16,7 @@ import { HashRouter as Router } from 'react-router-dom';
 ReactDOM.createRoot(document.getElementById('root')).render(
 
 
-  <Router>
+  <BrowserRouter basename='/tinda_web/'>
   <React.StrictMode>
     <PrimeReactProvider>
       <Provider store={store}>
@@ -24,5 +24,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </Provider>
     </PrimeReactProvider>
   </React.StrictMode>
-  </Router>,
+  </BrowserRouter>,
 )

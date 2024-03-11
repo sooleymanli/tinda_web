@@ -8,9 +8,10 @@ import { classNames } from "primereact/utils";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setUserData } from "../loginSlice";
-import Logo from '../../../assets/images/logo.svg'
 import { AUTH_LOGIN } from "../services/api";
 import { useToast } from "../../../context/ToastContext";
+import Logo from '../../../assets/images/logo.svg'
+
 
 const Login = () => {
   const [password, setPassword] = useState("");
@@ -40,7 +41,7 @@ const Login = () => {
         localStorage.setItem("token",data.token)
     dispatch(setUserData(res.data))
     navigate("/dashboard");
-    showToast("success","Uğurlu əməliyyat!","Daxil olunur..")
+    showToast("success","Uğurlu əməliyyat!","Daxil olundu!",3000)
     }
 
  } catch (error) {
