@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const incomeSlice = createSlice({
+export const outGoingSlice = createSlice({
   name: "income",
   initialState: {
     data:null,

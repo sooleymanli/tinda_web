@@ -48,7 +48,7 @@ mr-2"></i>
                     </li>
 
 
-                    <li onClick={()=>navigate("/dashboard/sent")}>
+                    <li onClick={()=>navigate("/dashboard/outgoing")}>
                       <a className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full">
                         <i className="pi pi-send
 mr-2"></i>
@@ -61,9 +61,7 @@ mr-2"></i>
                         <i className="pi pi-history
 mr-2"></i>
                         <span className="font-medium">Tarixçə</span>
-                        <span className="inline-flex align-items-center justify-content-center ml-auto bg-blue-500 text-0 border-circle" style={{ minWidth: '1.5rem', height: '1.5rem' }}>
-                          3
-                        </span>
+                        
                         <Ripple />
                       </a>
                     </li>

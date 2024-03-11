@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
@@ -17,10 +17,10 @@ import Loading from "../../components/Loading";
 import Error from "../../components/Error";
 import styled from "styled-components";
 
-export default function Income() {
+export default function OutGoing() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const dispatch = useDispatch();
-  const { data, error, isLoading } = useSelector((state) => state.incomeSlice);
+  const { data, error, isLoading } = useSelector((state) => state.outGoingSlice);
   const [globalFilter, setGlobalFilter] = useState("");
 const navigate = useNavigate()
   const fetchData = async () => {
@@ -78,7 +78,7 @@ const navigate = useNavigate()
 
   return (
     <Wrapper>
-    <h2>Göndərilənlər</h2>
+      <h2>Göndərilənlər</h2>
       {!error && !isLoading && data ? (
         <DataTable
           globalFilter={globalFilter}
@@ -117,7 +117,7 @@ const navigate = useNavigate()
       )}
 
       <Outlet />
-      </Wrapper>
+    </Wrapper>
   );
 }
 

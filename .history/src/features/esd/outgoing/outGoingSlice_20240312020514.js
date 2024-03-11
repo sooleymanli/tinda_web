@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const incomeSlice = createSlice({
+export const outGoingSlice = createSlice({
   name: "income",
   initialState: {
     data:null,
@@ -23,4 +23,4 @@ export const incomeSlice = createSlice({
 
 export const {setData,setError,setIsLoading } = incomeSlice.actions;
 
-export default incomeSlice.reducer;
+export default outGoingSlice.reducer;

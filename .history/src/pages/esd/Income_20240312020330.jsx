@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
@@ -15,7 +15,6 @@ import { getStatusLabel, getStatusSeverity } from "../../helper/Status";
 import { InputText } from "primereact/inputtext";
 import Loading from "../../components/Loading";
 import Error from "../../components/Error";
-import styled from "styled-components";
 
 export default function Income() {
   const [selectedProduct, setSelectedProduct] = useState(null);

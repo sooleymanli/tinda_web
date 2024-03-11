@@ -11,7 +11,7 @@ const myRoutes = useRoutes()
     <ContentWrapper>
       <RouteWrapper>
       <Routes>
-        {myRoutes.map((e,i)=><Route defaultRoute path={e.path} element={e.element} key={i} />)}
+        {myRoutes.map((e,i)=><Route exact={e.exact} defaultRoute path={e.path} element={e.element} key={i} />)}
       </Routes>
       </RouteWrapper>
     </ContentWrapper>

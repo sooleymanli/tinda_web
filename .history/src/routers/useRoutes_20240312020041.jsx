@@ -1,6 +1,7 @@
 import Income from '../pages/esd/Income'
 import DocumentType from '../pages/admin/esd/DocumentType'
 import History from '../pages/esd/History'
+import Sent from '../pages/esd/Sent'
 import NewDoc from '../features/esd/income/components/NewDoc'
 import OutGoing from '../pages/esd/OutGoing'
 
