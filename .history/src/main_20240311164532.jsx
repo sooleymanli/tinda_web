@@ -16,7 +16,7 @@ import { HashRouter as Router } from 'react-router-dom';
 ReactDOM.createRoot(document.getElementById('root')).render(
 
 
-  <Router>
+  <Router basename='/tinda_web'>
   <React.StrictMode>
     <PrimeReactProvider>
       <Provider store={store}>
